@@ -1,0 +1,21 @@
+/* Style for header */
+header#top {
+    background-color: black;
+}
+h1 {
+    margin: 0%;
+    padding: 5%;
+    color: white;
+}
+
+/* Style for Nav bar */
+#nav_list {
+    margin: 0%;
+    padding: 10%;
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
