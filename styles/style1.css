@@ -1,21 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+/* Style for body */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0%;
+}
+
 /* Style for header */
 header#top {
-    background-color: black;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, black, white);
+}
+img#profile_pic {
+    width: 20vh;
+    height: 20vh;
+    padding: 1%;
+    border-radius: 100%;
 }
 h1 {
     margin: 0%;
-    padding: 5%;
+    padding: 2%;
+    
     color: white;
 }
 
 /* Style for Nav bar */
-#nav_list {
+nav {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+ul#nav_list {
     margin: 0%;
-    padding: 10%;
+    padding: 0%;
     list-style-type: none;
+    display: flex;
+    background-color: black;
+}
+#nav_list > li {
+    margin: 0%;
+    padding: 2%;
+}
+#nav_list > li a {
+    text-decoration: none;
+    color: white;
+}
+#nav_list > li:hover {
+    background-color: grey;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+
+/* Style for Main */
+div#main {
+    flex-grow: 1;
+}
+section {
+    margin: 0%;
+    padding: 1%;
+}
+
+/* Style for Footer */
+footer {
+    margin: 0%;
+    padding: 5%;
+    flex-shrink: 0;
+    background-color: black;
+}
+footer > ul {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    color: white;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+}
+
+footer li a {
+    margin-left: 5px;
+    color: white;
 }
