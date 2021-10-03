@@ -8,10 +8,8 @@
         <link rel="stylesheet" href="styles/style1.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="scripts/script.js" defer></script>
     </head>
     <body>
         <header id="top">
@@ -25,17 +23,25 @@
         <nav>
             <ul id="nav_list">
                 <li id="name"><b>Abhishek Bisht</b></li>
-                <li class="tab" ><a href="#about_me"><b>About Me</b></a></li>
-                <li class="tab" ><a href="#projects"><b>Projects</b></a></li>
-                <li class="tab" ><a href="#publications"><b>Publications</b></a></li>
-                <li class="tab" ><a href="#footer"><b>Contact</b></a></li>
+                <li class="tab about_me">
+                    <a class="about_me" id="nav_btn_link_about_me" href="#about_me">About Me</a>
+                </li>
+                <li class="tab projects">
+                    <a class="projects" id="nav_btn_link_projects" href="#projects">Projects</a>
+                </li>
+                <li class="tab publications">
+                    <a class="publications" id="nav_btn_link_publications" href="#publications">Publications</a>
+                </li>
+                <li class="tab contact">
+                    <a class="contact" id="nav_btn_link_contact" href="#footer">Contact</a>
+                </li>
             </ul>
         </nav>
 
         <!-- Main -->
         <div id="main">
             <!-- Section - About Me -->
-            <section id="about_me">
+            <section class="about_me hidden">
                 <h2>About me</h2>
                 <p>
                     Hello I am abhishek <br>
@@ -62,7 +68,7 @@
             </section>
 
             <!-- Section - Projects -->
-            <section id="projects">
+            <section class="projects hidden">
                 <h2>My projects</h2>
                 <dl>
                     <dt>Project 1</dt>
@@ -75,7 +81,7 @@
             </section>
 
             <!-- Section - Publications -->
-            <section id="publications">
+            <section class="publications hidden">
                 <h2>My Publications</h2>
                 <p>
                     I have done projects in the area of Android Development, Backend Development as well as in Machine Learning and several
@@ -89,7 +95,7 @@
         </div>
 
         <!-- Footer -->
-        <footer id="footer">
+        <footer class="footer">
             <h2 class="heading">
                 CONTACT
             </h2>

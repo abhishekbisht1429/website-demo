@@ -14,7 +14,7 @@ Set2: F3F1E2(Background), EDEAD0(In case needed to type on Black), 3BBA98(green 
 :root {
     --primary-color: #f7f1e6;
     --highlight: #FF6864;
-    --light-bg: white;
+    --light: white;
     --tile-color: #F3F1E2;
     --dark-bg: #0B4141;
 }
@@ -25,7 +25,7 @@ body {
     flex-direction: column;
     align-items: stretch;
     margin: 0%;
-    background-color: var(--light-bg);
+    background-color: var(--light);
 }
 
 /* Style for header */
@@ -36,15 +36,14 @@ header#top {
     background: linear-gradient(135deg, var(--dark-bg), var(--primary-color));
 }
 img#profile_pic {
-    width: 18vh;
-    height: 18vh;
-    padding: 1%;
+    width: 16vh;
+    height: 16vh;
+    margin: 1%;
     border-radius: 100%;
 }
 h1 {
-    margin: 0%;
-    padding: 2%;
-    font-size: 4em;
+    margin: 1%;
+    font-size: 2em;
     color: var(--primary-color);
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -58,33 +57,37 @@ nav {
 }
 ul#nav_list {
     margin: 0%;
-    padding: 0%;
+    padding-right: 10%;
+    padding-left: 10%;
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     background-color: var(--dark-bg);
 }
-#nav_list > li {
-    margin: 0%;
-    padding: 2%;
-}
+/* #nav_list > li {
+    margin: 1%;
+} */
 #nav_list > li.tab a {
+    display: block;
+    padding: 1em;
     text-decoration: none;
     color: var(--primary-color);
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;
 }
-#nav_list > li.tab a:hover {
+#nav_list > li.tab a:hover:not(.active) {
     color: var(--highlight);
+}
+#nav_list > li.tab a.active {
+    background-color: var(--highlight);
 }
 
 #nav_list #name {
     padding: 0%;
-    padding-left: 2%;
+    margin: 0%;
     color: var(--primary-color);
     text-align: left;
-    font-size: 2em;
+    font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
     flex: 1;
 }
@@ -94,12 +97,14 @@ ul#nav_list {
 div#main {
     flex-grow: 1;
 }
-section#about_me{
+section.about_me {
     border-radius: 2%;
-    /* box-shadow:inset; */
     margin: 1%;
     padding: 1%;
     background-color: var(--tile-color);
+}
+section.hidden {
+    display: none;
 }
 
 /* Style for Footer */
@@ -110,27 +115,28 @@ footer {
     background-color: var(--dark-bg);
 }
 
-footer > p {
-    margin-top: 1%;
-    margin-bottom: 2%;
-    color: white;
+footer .heading {
+    margin: 1%;
+    color: var(--light);
     text-align: center;
 }
 
-footer .heading {
-    color: white;
+footer > p {
+    margin: 1%;
+    color: var(--light);
     text-align: center;
+    font-style: italic;
+    font-size: 1em;
 }
 
 footer > ul {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin: 1%;
     padding: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    color: white;
+    color: var(--light);
 }
 
 footer li {
