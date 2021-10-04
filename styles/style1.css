@@ -18,6 +18,9 @@ Set2: F3F1E2(Background), EDEAD0(In case needed to type on Black), 3BBA98(green 
     --tile-color: #F3F1E2;
     --dark-bg: #0B4141;
 }
+html {
+    font-family: 'Montserrat', sans-serif;
+}
 /* Style for body */
 body {
     min-height: 100vh;
@@ -45,7 +48,6 @@ h1 {
     margin: 1%;
     font-size: 2em;
     color: var(--primary-color);
-    font-family: 'Montserrat', sans-serif;
     font-weight: 100;
 }
 
@@ -73,7 +75,6 @@ ul#nav_list {
     padding: 1em;
     text-decoration: none;
     color: var(--primary-color);
-    font-family: 'Montserrat', sans-serif;
 }
 #nav_list > li.tab a:hover:not(.active) {
     color: var(--highlight);
@@ -88,7 +89,6 @@ ul#nav_list {
     color: var(--primary-color);
     text-align: left;
     font-size: 1.2em;
-    font-family: 'Montserrat', sans-serif;
     flex: 1;
 }
 
@@ -98,7 +98,7 @@ div#main {
     flex-grow: 1;
 }
 section.about_me {
-    border-radius: 2%;
+    border-radius: 50px;
     margin: 1%;
     padding: 1%;
     background-color: var(--tile-color);
