@@ -39,4 +39,8 @@ tabPublications.onclick = onclickTab;
 tabContact.onclick = onclickTab;
 
 paraTime = document.querySelector("p#time");
-paraTime.innerHTML = Date();
+function time() {
+    paraTime.innerHTML = Date();
+}
+
+setInterval(time, 1000);
