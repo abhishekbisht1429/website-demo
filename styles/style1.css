@@ -93,21 +93,86 @@ ul#nav_list {
 }
 
 
-/* Style for Main */
+/* 
+    Style for Main 
+*/
 div#main {
     flex-grow: 1;
 }
-section.about_me {
+section {
     border-radius: 50px;
     margin: 1%;
-    padding: 1%;
+    padding: 2%;
     background-color: var(--tile-color);
+    text-align: center;
 }
 section.hidden {
     display: none;
 }
 
-/* Style for Footer */
+/* style for about me */
+ul.about_me {
+    margin: 1%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+ul.about_me > li {
+    margin: 1%;
+    padding: 0.75em;
+    border-radius: 10px;
+    background-color: var(--highlight);
+    color: var(--light);
+}
+
+p#time {
+    margin-top: 10%;
+    color: var(--highlight);
+}
+
+
+
+/* style for projects */
+dl {
+    text-align: left;
+}
+dl.projects {
+    padding: 1%;
+}
+dl dt.projects {
+    margin: 1%;
+    font-weight: 900;
+}
+
+
+/* style for publications */
+table.pub_table {
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+}
+table.pub_table tr {
+    padding: 1em;
+    border-style: solid;
+}
+
+table.pub_table tr th {
+    padding: 1em;
+    font-weight: 900;
+    border-style: solid;
+}
+
+table.pub_table tr td {
+    padding: 1em;
+    border-style: solid;
+}
+
+/* 
+    Style for Footer
+*/
 footer {
     margin: 0%;
     padding: 4%;

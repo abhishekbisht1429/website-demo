@@ -37,3 +37,6 @@ tabAboutMe.onclick = onclickTab;
 tabProjects.onclick = onclickTab;
 tabPublications.onclick = onclickTab;
 tabContact.onclick = onclickTab;
+
+paraTime = document.querySelector("p#time");
+paraTime.innerHTML = Date();
